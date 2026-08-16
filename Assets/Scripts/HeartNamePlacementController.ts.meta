@@ -1,0 +1,67 @@
+- !<AssetImportMetadata/3bfc8168-a018-4d78-9d51-4693ddcfe845>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> eaf20868-020e-4c56-9a9e-e49986f0ec31
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> eaf20868-020e-4c56-9a9e-e49986f0ec31
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 24ba3689-aaa6-4f33-964c-4f809c3c1c51
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/24ba3689-aaa6-4f33-964c-4f809c3c1c51>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: ddfcc24b-3ee5-4bff-921b-17029cb44b82
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    anchorModule: false
+    previewDistance: false
+    pulseAmount: false
+    pulseSpeed: false
+    sourceHeart: false
+    surfaceOffset: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - sourceHeart: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      anchorModule: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      surfaceOffset: !<float> 3.000000
+      pulseAmount: 0.100000
+      pulseSpeed: 1.250000
+      previewDistance: !<float> 95.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">HeartNamePlacementController – room placement</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject sourceHeart {"hint":"Authored glowing heart whose live mesh and materials are copied exactly"}'
+    - '// @input AssignableType_1 anchorModule {"hint":"Spatial Anchors module used to lock committed hearts to the physical room"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float surfaceOffset = 3 {"hint":"Distance in centimeters that the placed heart floats off a detected surface", "widget":"slider", "min":1, "max":8, "step":0.5}'
+    - '// @input float pulseAmount = 0.1 {"hint":"Amount of continuous heart pulse as a fraction of its authored scale", "widget":"slider", "min":0.04, "max":0.2, "step":0.01}'
+    - '// @input float pulseSpeed = 1.25 {"hint":"Heart pulse cycles per second", "widget":"slider", "min":0.5, "max":2.5, "step":0.1}'
+    - '// @input float previewDistance = 95 {"hint":"Immediate marker distance from the user while a room surface is being acquired", "widget":"slider", "min":60, "max":160, "step":5}'
+    - '// @ui {"widget":"group_end"}'

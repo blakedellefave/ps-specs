@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/1bcbb4a2-cd39-4b06-97fe-50f9a6c4d2d8>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 234e95ef-22b0-4b2d-b8fe-33fa5eeac78e
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 234e95ef-22b0-4b2d-b8fe-33fa5eeac78e
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 3e23e6c4-3fb8-4621-8797-966a7194ee34
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/3e23e6c4-3fb8-4621-8797-966a7194ee34>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: a4b37091-2a61-4ca5-b984-df9253cf5b2f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    noteText: false
+    panelHeight: false
+    panelWidth: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - noteText: "Welcome to P.S. a unique shared experience designed for SPECS! Just like writing a letter, leave a P.S. anywhere in your environment that you would like to share some context for the next user."
+      panelWidth: !<float> 30.000000
+      panelHeight: !<float> 20.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">HeartNameWelcomeNoteUI – revealed welcome note</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input string noteText = "Welcome to P.S. a unique shared experience designed for SPECS! Just like writing a letter, leave a P.S. anywhere in your environment that you would like to share some context for the next user." {"hint":"Message displayed after the heart is tapped", "widget":"text_area"}'
+    - '// @input float panelWidth {"hint":"Welcome note width in centimeters", "widget":"slider", "min":14, "max":28, "step":0.1}'
+    - '// @input float panelHeight {"hint":"Welcome note height in centimeters", "widget":"slider", "min":10, "max":24, "step":0.1}'
+    - '// @ui {"widget":"group_end"}'

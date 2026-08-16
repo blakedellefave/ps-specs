@@ -1,0 +1,77 @@
+- !<AssetImportMetadata/aea9fd35-42a5-47b5-a3a6-af2cd5c208a8>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 5a0d38eb-8af7-4f19-b5bd-779628b973cc
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 5a0d38eb-8af7-4f19-b5bd-779628b973cc
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> bf1d29a4-f12c-47ef-868a-0df43432888e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/bf1d29a4-f12c-47ef-868a-0df43432888e>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 8bbe3cf4-0571-4ff0-a6c0-6e76d9118c56
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bobHeight: false
+    bobSpeed: false
+    debugColliders: false
+    heartRoot: false
+    heartTap: false
+    palmHeartButton: false
+    placement: false
+    tapPrompt: false
+    welcomeNote: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - heartRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      heartTap: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      tapPrompt: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      welcomeNote: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      placement: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      palmHeartButton: !<MappingBased.AssignableType_5> 00000000-0000-0000-0000-000000000000
+      bobHeight: 0.800000
+      bobSpeed: 0.350000
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">HeartNameMain – experience controller</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject heartRoot {"hint":"Authored root containing the procedural glowing heart"}'
+    - '// @input AssignableType_1 heartTap {"hint":"SIK tap interaction attached to the authored heart"}'
+    - '// @input AssignableType_2 tapPrompt {"hint":"Typed UIKit touch button shown beneath the heart"}'
+    - '// @input AssignableType_3 welcomeNote {"hint":"Typed UIKit welcome note revealed after the pop"}'
+    - '// @input AssignableType_4 placement {"hint":"Places new P.S. hearts against room surfaces"}'
+    - "// @input AssignableType_5 palmHeartButton {\"hint\":\"Heart placement launcher shown on the user's raised left palm\"}"
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float bobHeight = 0.8 {"hint":"Vertical floating distance in centimeters", "widget":"slider", "min":0.2, "max":2, "step":0.1}'
+    - '// @input float bobSpeed = 0.35 {"hint":"Heart floating cycles per second", "widget":"slider", "min":0.1, "max":1.2, "step":0.05}'
+    - '// @input bool debugColliders {"hint":"Show any collider wireframes in this experience"}'
+    - '// @ui {"widget":"group_end"}'
